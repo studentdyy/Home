@@ -5,8 +5,10 @@ import com.dyyhub.pojo.Book;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 @SpringBootTest
+@Transactional//数据回滚
 public class BookServiceImplTest {
     @Autowired
     private BookService2 bookService2;
