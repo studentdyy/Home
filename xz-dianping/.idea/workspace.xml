@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b8b31c6-9472-425d-a39a-4a1c39e2a075" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/xz-dianping/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/HmDianPingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/config/WebExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/controller/BlogCommentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/controller/FollowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/controller/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/controller/ShopTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/controller/VoucherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/controller/VoucherOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/dto/LoginFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/dto/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/dto/ScrollResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/BlogComments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/Follow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/SeckillVoucher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/ShopType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/Voucher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/entity/VoucherOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/BlogCommentsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/BlogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/FollowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/SeckillVoucherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/ShopMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/ShopTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/VoucherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/mapper/VoucherOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/IBlogCommentsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/IFollowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/ISeckillVoucherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/IShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/IShopTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/IUserInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/IVoucherOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/IVoucherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/BlogCommentsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/FollowServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/SeckillVoucherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/ShopTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/VoucherOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/service/impl/VoucherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/CacheClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/PasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/RedisConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/RedisData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/RedisIdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/RegexPatterns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/RegexUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/SystemConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/UserHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/lock/ILock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/java/com/hmdp/utils/lock/SimpleRedisLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/resources/db/hmdp.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/resources/logic/Redisson可重入锁原理.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/resources/logic/互斥锁.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/resources/logic/分布式锁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/resources/logic/逻辑删除.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/resources/mapper/VoucherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/resources/script/seckill.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/main/resources/script/unlock.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/test/java/com/hmdp/HmDianPingApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/test/java/com/hmdp/controller/ShopDateInTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/test/java/com/hmdp/script/UserToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/test/java/com/hmdp/service/ShopServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/test/java/com/hmdp/utils/RedisIdWorkerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xz-dianping/src/test/java/com/hmdp/uv/UvTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookCity/src/main/java/com/dyyhub/bookCity/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookCity/src/main/java/com/dyyhub/bookCity/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookCity/src/main/java/com/dyyhub/bookCity/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookCity/src/main/java/com/dyyhub/bookCity/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookCity/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BookCity/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookCity/src/main/webapp/WEB-INF/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BookCity/src/main/webapp/WEB-INF/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookCity/src/main/webapp/WEB-INF/pages/user/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BookCity/src/main/webapp/WEB-INF/pages/user/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookCity/target/classes/com/dyyhub/bookCity/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BookCity/target/classes/com/dyyhub/bookCity/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookCity/target/classes/com/dyyhub/bookCity/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BookCity/target/classes/com/dyyhub/bookCity/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookCity/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BookCity/target/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/dataSources/89458421-621c-4726-8bce-4a638a0fbac6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/dataSources/89458421-621c-4726-8bce-4a638a0fbac6/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/springboot_02_ssmp_demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/springboot_02_ssmp_demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/springboot_02_ssmp_demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/springboot_02_ssmp_demo/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="NewLua" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="290N7j1AwIA0KxqtvfmS4PHEX5t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.LuaCheck" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\dyyhub\hm-dianping\hm-dianping\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\dyyhub\hm-dianping\hm-dianping\src\main\resources" />
+      <recent name="E:\dyyhub\hm-dianping\hm-dianping\src\main\resources\logic" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ShopDateInTest.loadShopDate">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDateInTest.loadShopDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xz-dianping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmdp.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmdp.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.hmdp.controller.ShopDateInTest" />
+      <option name="METHOD_NAME" value="loadShopDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserToken.getToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xz-dianping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmdp.script.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmdp.script" />
+      <option name="MAIN_CLASS_NAME" value="com.hmdp.script.UserToken" />
+      <option name="METHOD_NAME" value="getToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserToken.testWeb2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xz-dianping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmdp.script.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmdp.script" />
+      <option name="MAIN_CLASS_NAME" value="com.hmdp.script.UserToken" />
+      <option name="METHOD_NAME" value="testWeb2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserToken.testWeb3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xz-dianping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmdp.script.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmdp.script" />
+      <option name="MAIN_CLASS_NAME" value="com.hmdp.script.UserToken" />
+      <option name="METHOD_NAME" value="testWeb3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserToken.testWeb4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xz-dianping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmdp.script.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmdp.script" />
+      <option name="MAIN_CLASS_NAME" value="com.hmdp.script.UserToken" />
+      <option name="METHOD_NAME" value="testWeb4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HmDianPingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xz-dianping" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmdp.HmDianPingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HmDianPingApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xz-dianping" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmdp.HmDianPingApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/hm-dianping/src/main/java" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ShopDateInTest.loadShopDate" />
+        <item itemvalue="JUnit.UserToken.getToken" />
+        <item itemvalue="JUnit.UserToken.testWeb4" />
+        <item itemvalue="JUnit.UserToken.testWeb2" />
+        <item itemvalue="JUnit.UserToken.testWeb3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b8b31c6-9472-425d-a39a-4a1c39e2a075" name="Default Changelist" comment="" />
+      <created>1652245878260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652245878260</updated>
+      <workItem from="1652245879465" duration="18173000" />
+      <workItem from="1652319089609" duration="13739000" />
+      <workItem from="1652348994882" duration="8244000" />
+      <workItem from="1652406590534" duration="16527000" />
+      <workItem from="1652493150790" duration="6082000" />
+      <workItem from="1652501089098" duration="1230000" />
+      <workItem from="1652506172004" duration="149000" />
+      <workItem from="1652506352389" duration="7991000" />
+      <workItem from="1652575539738" duration="14888000" />
+      <workItem from="1652615773011" duration="5681000" />
+      <workItem from="1652666139239" duration="7029000" />
+      <workItem from="1652705708482" duration="4813000" />
+      <workItem from="1652752864416" duration="15121000" />
+      <workItem from="1652840758171" duration="2008000" />
+      <workItem from="1652858783634" duration="5399000" />
+      <workItem from="1652925163516" duration="651000" />
+      <workItem from="1653026284536" duration="4316000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="783" y="312" key="#com.intellij.ide.util.MemberChooser" timestamp="1652861475688">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="783" y="312" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1652861475688" />
+    <state x="208" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1652524296333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="208" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1652524296333" />
+    <state x="686" y="312" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1652508800781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="312" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1652508800781" />
+    <state x="736" y="320" key="FileChooserDialogImpl" timestamp="1652575760796">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="736" y="320" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1652575760796" />
+    <state width="1860" height="185" key="GridCell.Tab.0.bottom" timestamp="1652849705023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1652849705023" />
+    <state width="1860" height="185" key="GridCell.Tab.0.center" timestamp="1652849705022">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="185" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1652849705022" />
+    <state width="1860" height="185" key="GridCell.Tab.0.left" timestamp="1652849705022">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="185" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1652849705022" />
+    <state width="1860" height="185" key="GridCell.Tab.0.right" timestamp="1652849705023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="185" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1652849705023" />
+    <state width="1581" height="383" key="GridCell.Tab.1.bottom" timestamp="1652795012087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1581" height="383" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1652795012087" />
+    <state width="1581" height="383" key="GridCell.Tab.1.center" timestamp="1652795012087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1581" height="383" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1652795012087" />
+    <state width="1581" height="383" key="GridCell.Tab.1.left" timestamp="1652795012087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1581" height="383" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1652795012087" />
+    <state width="1581" height="383" key="GridCell.Tab.1.right" timestamp="1652795012087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1581" height="383" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1652795012087" />
+    <state width="1581" height="383" key="GridCell.Tab.2.bottom" timestamp="1652795012087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1581" height="383" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1652795012087" />
+    <state width="1581" height="383" key="GridCell.Tab.2.center" timestamp="1652795012087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1581" height="383" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1652795012087" />
+    <state width="1581" height="383" key="GridCell.Tab.2.left" timestamp="1652795012087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1581" height="383" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1652795012087" />
+    <state width="1581" height="383" key="GridCell.Tab.2.right" timestamp="1652795012087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1581" height="383" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1652795012087" />
+    <state x="578" y="255" key="IDE.errors.dialog" timestamp="1652506315118">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="578" y="255" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1652506315118" />
+    <state x="1532" y="510" key="ReplaceDuplicatesPrompt" timestamp="1652753867635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1532" y="510" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1652753867635" />
+    <state x="436" y="140" key="SettingsEditor" timestamp="1652622329693">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="436" y="140" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1652622329693" />
+    <state x="1134" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1652862320791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1134" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1652862320791" />
+    <state x="1102" y="383" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1652862297787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1102" y="383" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1652862297787" />
+    <state x="595" y="246" width="1061" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1652509788255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="246" width="1061" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1652509788255" />
+    <state x="948" y="353" key="extract.method.dialog" timestamp="1652753865621">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="948" y="353" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1652753865621" />
+    <state x="655" y="252" width="979" height="536" key="find.popup" timestamp="1652619197027">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="252" width="979" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1652619197027" />
+    <state x="669" y="196" key="new project wizard" timestamp="1652946880472">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="196" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1652946880472" />
+    <state x="817" y="329" key="refactoring.ChangeSignatureDialog" timestamp="1652776620646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="817" y="329" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1652776620646" />
+    <state x="613" y="246" width="672" height="677" key="run.anything.popup" timestamp="1652620162533">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="613" y="246" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1652620162533" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1652753826933">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1652753826933" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
