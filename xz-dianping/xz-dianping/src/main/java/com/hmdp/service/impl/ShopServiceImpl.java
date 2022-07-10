@@ -73,32 +73,33 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     * */
     public Shop queryWithLogicExpire(Long id){
         String key = CACHE_SHOP_KEY + id;
-        //先去缓存那么找数据
+        //1，先去缓存那么找数据
         String shopJson = stringRedisTemplate.opsForValue().get(key);
-        //如果有值，直接返回
+        //2，如果有值，直接返回
         if (StrUtil.isBlank(shopJson)) {
+            //3，存在，直接返回
             return null;
         }
 
-        //1,命中，需要先把json反序列化为对象
+        //4,命中，需要先把json反序列化为对象
         RedisData redisData = JSONUtil.toBean(shopJson,RedisData.class);
         Shop shop = JSONUtil.toBean((JSONObject)redisData.getData(), Shop.class);
         LocalDateTime expireTime = redisData.getExpireTime();
 
-        //2,判断是否过期
+        //5,判断是否过期
         if(expireTime.isAfter(LocalDateTime.now())){
-            //2.1，未过期，则直接返回店铺信息
+            //5.1，未过期，则直接返回店铺信息
             return shop;
         }
-        //2.2，已过期，需要进行缓存重建
+        //5.2，已过期，需要进行缓存重建
 
-        //3，缓存重建
-        //3.1 获取互斥锁
+        //6，缓存重建
+        //6.1 获取互斥锁
         String lockKey = LOCK_SHOP_KEY + id;
         boolean isLock = tryToGetKey(lockKey);
-        //3.2 判断是否获取锁成功
+        //6.2 判断是否获取锁成功
         if(isLock){
-            //3.3 成功，创建新的线程去查找数据库，然后更新缓存，然后释放锁
+            //6.3 成功，创建新的线程去查找数据库，然后更新缓存，然后释放锁
             //用线程池去做，不然经常创建销毁影响性能
             CACHE_REBUILD_EXECUTOR.submit(()->{
                 try {
@@ -110,7 +111,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
                 }
             });
         }
-        //3.4 失败,则返回过期的信息
+        //6.4 失败,则返回过期的信息
         return shop;
     }
 
@@ -119,43 +120,43 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
      * */
     public Shop queryWithMutex(Long id){
         String key = CACHE_SHOP_KEY + id;
-        //先去缓存那么找数据
+        //1，先去缓存那么找数据
         String shopJson = stringRedisTemplate.opsForValue().get(key);
-        //如果有值，直接返回
+        //2，如果有值，直接返回
         if (StrUtil.isNotBlank(shopJson)) {
             return JSONUtil.toBean(shopJson,Shop.class);
         }
-        //解决缓存穿透问题，判断命中的是否为空值。
+        //3，解决缓存穿透问题，判断命中的是否为空值。
         if(shopJson != null){
             //此时，shopJson一定为空字符串，返回一个错误信息
             return null;
         }
         //未命中
-        //1，实现缓存重建
-        //1.1 获取互斥锁
+        //4，实现缓存重建
+        //4.1 获取互斥锁
         String lockKey = LOCK_SHOP_KEY + id;
         boolean isLock = tryToGetKey(lockKey);
         Shop shop = null;
         try{
-            //1.2判断是否成功
+            //4.2判断是否成功
 
             if (!isLock) {
-                //1.3失败则休眠一段时间继续获取互斥锁，进行递归
+                //4.3失败则休眠一段时间继续获取互斥锁，进行递归
                 Thread.sleep(50);
                 return queryWithMutex(id);
             }
 
-            //成功，就根据id查找数据库
+            //4.4成功，就根据id查找数据库
             shop = getById(id);
             //模拟一个延迟
             Thread.sleep(200);
-
+            //5，不存在，返回错误
             if(shop == null){
                 //解决缓存穿透问题，若数据库查询为空，则缓存空值，设置期限为2分钟
                 stringRedisTemplate.opsForValue().set(key,"",CACHE_NULL_TTL, TimeUnit.MINUTES);
                 return null;
             }
-            //存在，写入redis
+            //6，存在，写入redis
             stringRedisTemplate.opsForValue().set(key,JSONUtil.toJsonStr(shop),CACHE_SHOP_TTL, TimeUnit.MINUTES);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
@@ -174,19 +175,20 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     * */
     public Shop queryWithPassThrough(Long id){
         String key = CACHE_SHOP_KEY + id;
-        //先去缓存那么找数据
+        //1，先去缓存那么找数据
         String shopJson = stringRedisTemplate.opsForValue().get(key);
-        //如果有值，直接返回
+        //2，如果有值，直接返回
         if (StrUtil.isNotBlank(shopJson)) {
             return JSONUtil.toBean(shopJson,Shop.class);
         }
+        //3，如果没有值，那么就两种情况，一是null，而是空字符串""
         //解决缓存穿透问题，判断命中的是否为空值。
         if(shopJson != null){
             //此时，shopJson一定为空字符串，返回一个错误信息
             return null;
         }
 
-        //不存在，就根据id查找数据库
+        //4，未命中 就根据id查找数据库
         Shop shop = getById(id);
         if(shop == null){
             //解决缓存穿透问题，若数据库查询为空，则缓存空值，设置期限为2分钟
@@ -208,6 +210,13 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         stringRedisTemplate.delete(key);
     }
 
+    /**
+     *  预缓存热点数据
+     *
+     * @param id    店铺id
+     * @param expireSeconds 过期时间的秒数
+     * @throws InterruptedException
+     */
     public void saveShop2Redis(Long id,Long expireSeconds) throws InterruptedException {
         //1,查询店铺信息
         Shop shop = getById(id);
@@ -221,7 +230,11 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     }
 
 
-
+    /**
+     * 更新商铺信息
+     * @param shop
+     * @return
+     */
     @Override
     @Transactional
     public Result update(Shop shop) {

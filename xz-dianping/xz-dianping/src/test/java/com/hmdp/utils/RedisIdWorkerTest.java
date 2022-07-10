@@ -36,7 +36,6 @@ public class RedisIdWorkerTest {
         for (int i = 0; i < 300; i++) {
             es.submit(task);
         }
-
         latch.await();
         long end = System.currentTimeMillis();
         System.out.println("time = " + (end - begin));

@@ -14,6 +14,7 @@ local stockKey = 'seckill:stock:' .. voucherId
 local orderKey ='seckill:order:' .. voucherId
 
 --判断库存是否充足
+--redis.call('get', stockKey)得到的是字符串，需要tonumber函数转换
 if(tonumber(redis.call('get', stockKey)) <= 0) then
     -- 3.2.库存不足，返回1
     return 1

@@ -15,11 +15,15 @@ import java.util.concurrent.TimeUnit;
  * @date 2022年05月14日 10:55
  */
 public class SimpleRedisLock implements ILock{
-
+    /**
+     * 不同业务不同锁名
+     */
     private String lockName;
 
     private StringRedisTemplate stringRedisTemplate;
-
+    /**
+     * 锁前缀
+     */
     private static final String KEY_PREFIX = "lock:";
 
     //集群模式下，每个jvm的线程id是递增的难免会引发冲突，因此我们要使用uuid和线程id拼接的方式
@@ -59,16 +63,16 @@ public class SimpleRedisLock implements ILock{
     }
 
 
-//    @Override
-//    public void unlock() {
-//        //获取线程标识
-//        String currThreadId = ID_PREFIX + Thread.currentThread().getId();
-//        //获取锁标识
-//        String id = stringRedisTemplate.opsForValue().get(KEY_PREFIX + lockName);
-//        //判断标识是否一致
-//        if (currThreadId.equals(id)) {
-//            //释放锁
-//            stringRedisTemplate.delete(KEY_PREFIX + lockName);
-//        }
-//    }
+/*    @Override
+    public void unlock() {
+        //获取线程标识
+        String currThreadId = ID_PREFIX + Thread.currentThread().getId();
+        //获取锁标识
+        String id = stringRedisTemplate.opsForValue().get(KEY_PREFIX + lockName);
+        //判断标识是否一致
+        if (currThreadId.equals(id)) {
+            //释放锁
+            stringRedisTemplate.delete(KEY_PREFIX + lockName);
+        }
+    }*/
 }

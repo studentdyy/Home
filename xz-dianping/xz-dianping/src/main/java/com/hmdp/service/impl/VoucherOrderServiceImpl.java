@@ -18,6 +18,7 @@ import org.springframework.data.redis.connection.stream.*;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -277,6 +278,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             //库存不足
             return Result.fail("库存不足！");
         }
+        //5，创建订单
         return createVoucherOrder(voucherId);
     }*/
 
@@ -397,44 +399,44 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         }
     }
      */
-//     旧版的一人一单的代码，仅适用与单个服务器
-//    @Transactional
-//    public Result createVoucherOrder(Long voucherId) {
-//        //(5)一人一单
-//        Long userId = UserHolder.getUser().getId();
-//        //这里的userId.toString() 底层是调用Long的一个方法，还是会创建一个新的string对象
-//        //所以我们要丢到常量池里
-//        synchronized (userId.toString().intern()){
-//            //5.1 查询订单
-//            Integer count = query().eq("user_id", userId).eq("voucher_id", voucherId).count();
-//            //5.2 判断是否存在
-//            if(count > 0){
-//                return  Result.fail("只能购买一次！");
-//            }
-//
-//            //6，扣减库存
-//            Boolean success = seckillVoucherService.update()
-//                    .setSql("stock = stock - 1")
-//                    .eq("voucher_id", voucherId)
-//                    //用乐观锁的机制解决超卖问题，在修改库存前判断这个库存还是否是之前查出来的库存，如果相同
-//                    //说明库存数量没被别的线程动过，可以减
-//                    //.eq("stock",voucher.getStock())
-//                    //但是这样有个问题就是失败的概率大大提高，我们只需要判断库存大于0即可!
-//                    .gt("stock",0)
-//                    .update();
-//            if (!success) {
-//                return Result.fail("库存不足！");
-//            }
-//
-//            //7，创建订单
-//            VoucherOrder voucherOrder = new VoucherOrder();
-//            long orderId = redisIdWorker.nextId("order");
-//            voucherOrder.setId(orderId);
-//            voucherOrder.setUserId(userId);
-//            voucherOrder.setVoucherId(voucherId);
-//
-//            save(voucherOrder);
-//            return Result.ok(orderId);
-//        }
-//    }
+/*     旧版的一人一单的代码，仅适用与单个服务器
+    @Transactional
+    public Result createVoucherOrder(Long voucherId) {
+        //(5)一人一单
+        Long userId = UserHolder.getUser().getId();
+        //这里的userId.toString() 底层是调用Long的一个方法，还是会创建一个新的string对象
+        //所以我们要丢到常量池里
+        synchronized (userId.toString().intern()){
+            //5.1 查询订单
+            Integer count = query().eq("user_id", userId).eq("voucher_id", voucherId).count();
+            //5.2 判断是否存在
+            if(count > 0){
+                return  Result.fail("只能购买一次！");
+            }
+
+            //6，扣减库存
+            Boolean success = seckillVoucherService.update()
+                    .setSql("stock = stock - 1")
+                    .eq("voucher_id", voucherId)
+                    //用乐观锁的机制解决超卖问题，在修改库存前判断这个库存还是否是之前查出来的库存，如果相同
+                    //说明库存数量没被别的线程动过，可以减
+                    //.eq("stock",voucher.getStock())
+                    //但是这样有个问题就是失败的概率大大提高，我们只需要判断库存大于0即可!
+                    .gt("stock",0)
+                    .update();
+            if (!success) {
+                return Result.fail("库存不足！");
+            }
+
+            //7，创建订单
+            VoucherOrder voucherOrder = new VoucherOrder();
+            long orderId = redisIdWorker.nextId("order");
+            voucherOrder.setId(orderId);
+            voucherOrder.setUserId(userId);
+            voucherOrder.setVoucherId(voucherId);
+
+            save(voucherOrder);
+            return Result.ok(orderId);
+        }
+    }*/
 }

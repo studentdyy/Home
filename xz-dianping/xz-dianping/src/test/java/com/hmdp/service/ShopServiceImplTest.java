@@ -26,6 +26,7 @@ public class ShopServiceImplTest {
     StringRedisTemplate stringRedisTemplate;
     @Resource
     ShopServiceImpl shopService;
+
     @Test
     public void test1() throws InterruptedException {
         shopService.saveShop2Redis(1l,10l);
